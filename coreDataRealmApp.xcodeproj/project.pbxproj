@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		BFD19DEE27864E38007F9807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD19DED27864E38007F9807 /* AppDelegate.swift */; };
 		BFD19DF027864E38007F9807 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD19DEF27864E38007F9807 /* SceneDelegate.swift */; };
-		BFD19DF227864E38007F9807 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD19DF127864E38007F9807 /* ViewController.swift */; };
-		BFD19DF527864E38007F9807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD19DF327864E38007F9807 /* Main.storyboard */; };
+		BFD19DF227864E38007F9807 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD19DF127864E38007F9807 /* CoreDataViewController.swift */; };
 		BFD19DF827864E38007F9807 /* coreDataRealmApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFD19DF627864E38007F9807 /* coreDataRealmApp.xcdatamodeld */; };
 		BFD19DFA27864E39007F9807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD19DF927864E39007F9807 /* Assets.xcassets */; };
 		BFD19DFD27864E39007F9807 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD19DFB27864E39007F9807 /* LaunchScreen.storyboard */; };
@@ -20,8 +19,7 @@
 		BFD19DEA27864E38007F9807 /* coreDataRealmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coreDataRealmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD19DED27864E38007F9807 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFD19DEF27864E38007F9807 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BFD19DF127864E38007F9807 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BFD19DF427864E38007F9807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFD19DF127864E38007F9807 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		BFD19DF727864E38007F9807 /* coreDataRealmApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreDataRealmApp.xcdatamodel; sourceTree = "<group>"; };
 		BFD19DF927864E39007F9807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFD19DFC27864E39007F9807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,8 +58,7 @@
 			children = (
 				BFD19DED27864E38007F9807 /* AppDelegate.swift */,
 				BFD19DEF27864E38007F9807 /* SceneDelegate.swift */,
-				BFD19DF127864E38007F9807 /* ViewController.swift */,
-				BFD19DF327864E38007F9807 /* Main.storyboard */,
+				BFD19DF127864E38007F9807 /* CoreDataViewController.swift */,
 				BFD19DF927864E39007F9807 /* Assets.xcassets */,
 				BFD19DFB27864E39007F9807 /* LaunchScreen.storyboard */,
 				BFD19DFE27864E39007F9807 /* Info.plist */,
@@ -130,7 +127,6 @@
 			files = (
 				BFD19DFD27864E39007F9807 /* LaunchScreen.storyboard in Resources */,
 				BFD19DFA27864E39007F9807 /* Assets.xcassets in Resources */,
-				BFD19DF527864E38007F9807 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFD19DF227864E38007F9807 /* ViewController.swift in Sources */,
+				BFD19DF227864E38007F9807 /* CoreDataViewController.swift in Sources */,
 				BFD19DEE27864E38007F9807 /* AppDelegate.swift in Sources */,
 				BFD19DF827864E38007F9807 /* coreDataRealmApp.xcdatamodeld in Sources */,
 				BFD19DF027864E38007F9807 /* SceneDelegate.swift in Sources */,
@@ -151,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BFD19DF327864E38007F9807 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BFD19DF427864E38007F9807 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BFD19DFB27864E39007F9807 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -298,7 +286,6 @@
 				INFOPLIST_FILE = coreDataRealmApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +313,6 @@
 				INFOPLIST_FILE = coreDataRealmApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
